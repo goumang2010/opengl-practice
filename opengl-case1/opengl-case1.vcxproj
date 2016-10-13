@@ -69,8 +69,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\p\opengl-practice\lib\glew-2.0.0\include;D:\p\opengl-practice\lib\glfw\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\p\opengl-practice\lib\glfw\lib-vc2015;D:\p\opengl-practice\lib\glew-2.0.0\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\lib\glew-2.0.0\include;..\lib\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib\glfw\lib-vc2015;..\lib\glew-2.0.0\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\lib\glew-2.0.0\include;..\lib\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib\glfw\lib-vc2015;..\lib\glew-2.0.0\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\lib\glew-2.0.0\include;..\lib\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib\glfw\lib-vc2015;..\lib\glew-2.0.0\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>..\lib\glew-2.0.0\include;..\lib\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib\glfw\lib-vc2015;..\lib\glew-2.0.0\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
